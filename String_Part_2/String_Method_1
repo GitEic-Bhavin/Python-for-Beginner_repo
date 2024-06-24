@@ -1,0 +1,38 @@
+1. .upper() and .lower() string method
+
+1. .upper() allow you to making everythings in UPPER Case.
+
+Ex.
+all_lower = "There are no capital letter here."
+
+print(all_lower.upper())
+
+OutPut:- THERE ARE NO CAPITAL LETTER here
+
+all_upper = "THIS IS SHOUTING TEXT!!"
+
+print(all_upper.lower)
+
+OutPut:- this is shouting text
+
+
+2. .isupper() and .islower() string method
+
+.isupper() returns boolean value false
+It only returns TRUE if the all letter in the string is UPPER CASE.
+
+Ex. print("Mixed Case".isupper())
+# OutPut:- False, 
+
+print("ALL CAPS!".isupper())
+# OutPut:- TRUE
+
+.islower() return booleans value false 
+It only return TRUE if the all letter in the string is lower case.
+
+Ex. print("HELLO".islower())
+# OutPut:- False
+
+print("$100 is a lot to make in an hour.".islower())
+# OutPut:- True
+

@@ -1,0 +1,38 @@
+# Dictionary Methods 2: .fromkeys(), .pop(), and .popitem()
+
+# 1. .fromkeys() -- returns a Dictionary using 2 values that is given as arguments.
+#      1st arguments take as keys &
+#      2nd arguments take as values
+
+# Ex.
+
+# ex_1 = {} -- called empty Dictionary
+# ex_1 = {}.fromkeys("1st arguments may be string or list.", "2nd arguments is its value)
+ex_1 = {}.fromkeys(["address"], "1600 Pennsylvania Avenue NW")
+print(ex_1)
+
+# This will generate a dictionary with key & value like ,
+# ex_1 = {"address": "1600 Pennsylvania Avenue NW"}
+
+# If we write string instead of list , we will dictionary value with each char of that string.
+ex_2 = {}.fromkeys("ad", "1600 Pennsylvania Avenue NW")
+print(ex_2)
+
+# OutPut:-
+# ex_1 = {'a': '1600 Pennsylvania Avenue NW',
+#         'd': '1600 Pennsylvania Avenue Nw'}
+
+
+# .pop()  -- remove keys from a dictionary.
+ex_3 = {"make": "Honda", "model": "civic", "year": 2016}
+ex_3.pop("model")
+print(ex_3)
+# OutPut:- {'make': 'Honda', 'year': 2016}
+
+
+# .popitem() -- allows you to remove the last key value pair from a dictionary without having to give it arguments.
+ex_3 = {"make": "Honda", "model": "civic", "year": 2016}
+ex_3.popitem()
+print(ex_3)
+
+# OutPut:- {'make': 'Honda', 'model': 'civic'}

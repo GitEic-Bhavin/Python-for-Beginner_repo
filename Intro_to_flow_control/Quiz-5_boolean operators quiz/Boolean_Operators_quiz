@@ -1,0 +1,23 @@
+# # Q-1
+# What does
+
+# True and False
+# evaluate to?
+# A-1 False
+
+# Q-2 What does
+
+print("PIZZA" == "pizza" or 100 == 100.00)
+# evaluate to?
+# A-2 True
+
+# Q-3
+
+# What comparison operators out of the 3 options available should be used in place of the question marks for this
+
+not True ? False and "green" ? "red"
+# to evaluate to True?
+# A-3 == and !=
+
+not True == False and "green" != "red"
+# It return TRUE

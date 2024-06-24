@@ -1,0 +1,23 @@
+# here 4 words for for loops
+# 1. for 2. in 3. word will take input from iterartion words. 4. words -- contains list, sequence of items to loops.
+
+word = [ "house", "dogs" ]  # between [ ] whatever you write it become list
+                            
+
+for letter in word:      # letter will take each items, lists form word [ ] & evaluate whether is it availabel in word [].
+    print(letter)        # after each iteration it print list from word [] one by one.
+    
+# OutPut:-  
+# house,
+# dogs
+
+word = "house"
+for letter in word:
+    print(letter)
+    
+# OutPut:-
+# h
+# o
+# u
+# s
+# e

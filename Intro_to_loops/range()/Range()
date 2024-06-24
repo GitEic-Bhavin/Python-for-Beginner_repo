@@ -1,0 +1,70 @@
+# Using range() with 1 Arguments
+
+# one_input = range(5)  # range(5) means, 0 to 4 is 5. range will start from 0 always.
+
+# for num in one_input:
+    
+#     print(num)
+
+# OutPut:-
+# 0
+# 1
+# 2
+# 3
+# 4
+    
+# Using range() with 2 Arguments
+
+# two_inputs = range(5, 10)
+
+# for num in two_inputs:
+#     print(num)
+    
+# OutPut:-
+# 5
+# 6
+# 7
+# 8
+# 9
+
+# Using range() with 3 Arguments
+
+three_inputs = range(1, 20, 3)
+# It creates a sequence of numbers that starts at first arugment is 1
+# And Increment up or down by the third arguments is 3
+# And Ends at one less then the seccond Arguments is 20.
+
+for num in three_inputs:
+    print(num) 
+    
+    # It means first arugment is 1 will be increase or decrease by third argument .
+    # 1 will increase/decrease by add/remove 3
+    # 1 + 3 = 4, 4 + 3 = 7, 7 + 3 = 10 etc. till second arguments
+    
+    # End with second arguments is 20
+    # 1, 4, 7, 10, 13, 16, 19.
+    
+# OutPut:-
+# 1
+# 4
+# 7
+# 10
+# 13
+# 16
+# 19
+
+# For Negative numbers
+
+three_input = range(20, 1, -3)
+
+for num in three_input:
+    print(num)
+    
+# OutPut:-
+# 20
+# 17
+# 14
+# 11
+# 8
+# 5
+# 2

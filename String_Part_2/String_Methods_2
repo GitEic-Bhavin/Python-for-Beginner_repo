@@ -1,0 +1,67 @@
+# .rjust() and .ljust()  Right Justifiy & Left Justify
+
+print("hello world".rjust(15))  # Add spaces at left size of later.
+# OutPut:-
+#    hello world  here, "hello world" has 11 character/length of string. But there is 1 tab = 4 spaces before hello world string.
+
+print("hello world".ljust(15) + "four spaces later.")    # Add spaces at rigt of later
+# OutPut:- 
+#hello world    four spaces later.
+
+print("hello world".rjust(15, "-"))
+# OutPut:- ----hello world
+
+print("hello world".ljust(15, "*"))
+# OutPut:- hello world****
+
+
+
+#   .center() -- string method -- It will arrange a string length both left side sam & right side will same.
+# String length "hello world" is a 11 . & .center(15) -- total lenght is 15 . 15-11 = 4.
+# so, 2 space at left side & 2 space at right side. This way it will make it center.
+
+print("hello world".center(15))  
+# OutPut:-
+#   hello world  
+# instead of
+#     hello world
+
+print("hello world".center(15, ":"))
+# OutPut:-
+#::hello world::
+
+
+
+
+# .strip(), rstrip(), lstrip() -- used to remove character such as whitespace (tab, spaces) from a string.
+
+# .strip() -- It will do same just like .center() -- but for remove whitespace, tabs,  spaces from both side left side & right staticmethod
+# rstrip() -- It will remove whitespaces, tabs, spaces from right side of string.
+# lstrip() -- It will remove whitespaces, tabs, spaces from left side of string.
+
+print("I had an exciting trip!!!11111")
+# OutPut:- I had an exciting trip!!!11111
+
+print("I had an exciting trip!!!11111".strip("1"))
+# OutPut:- I had an exciting trip!!!
+
+print("I had an exciting trip!!!11111".rstrip("1"))
+# OutPut:- I had an exciting trip!!!
+
+print("I had an exciting trip!!!11111".lstrip("1"))
+# OutPut:- I had an exciting trip!!!111111
+
+# Remove any character , word from a string.
+print("Jucice, bread, chees, beef, bread".rstrip(", bread"))
+# OutPut:- Jucice, bread, chees, beef.
+
+print("blueblueyellowblue".strip("elub"))  # It will remove a character "elub" from both side of string.
+# OutPut:- Yellow
+
+
+
+#   .replace() -- To find string & replace it with new string.
+
+print("Good Morning.".replace("Morning", "Afternoon"))
+# This will find a word Morning in string. And replace it with new word is Afternoon.
+# OutPut:- Good Afternoon.

@@ -1,0 +1,29 @@
+# Copy & DeepCopy Modules
+
+# When we have var1 = [1, 2, 3, 4, 5] & want to assing this lists value to new created vars.
+
+var1 = [1, 2, 3, 4, 5]
+var2 = var1
+print(var1)  # OutPut:- [1, 2, 3, 4, 5]
+print(var2)  # OutPut:- [1, 2, 3, 4, 5]
+
+# But, i want to change value in var2 at of 2 & assign 4.
+var2[1] = 4
+print(var1)  # OutPut:- [1, 4, 3, 4, 5]
+print(var2)  # OutPut:- [1, 4, 3, 4, 5]  # What .. I assing new value 4 instead of 2 in var2.
+             # But, It is also changed in var1. Why?
+             # Bcz, This method of list is take ref.
+             
+             # To avoid of make changes in original lists/vars
+             # use deepcopy module to make diff/separate copy of your original vars to your new vars.
+             # And You can make any changes in new vars without affecting original vars.
+             
+             # You have to Import Copy Module first.
+             
+import copy
+ex_12 = [1, 2, 3, 4, 5]
+ex_13 = copy.deepcopy(ex_12)
+print(ex_12)  # OutPut:- [1, 2, 3, 4, 5]
+
+ex_13[1] = 4
+print(ex_13)  # OutPut:- [1, 4, 3, 4, 5]

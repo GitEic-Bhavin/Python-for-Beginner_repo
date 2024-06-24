@@ -1,0 +1,18 @@
+# Using .format()  you can call variable in {} to put value of you asked to user for input.
+# Like, you asked to user for input for name, degree, job, experiance.
+
+# You dont want to type each value of this input when you print().
+# You do it by using formate(name, degree, job, experiance) by keeping {} in your print()
+
+
+
+name = input("What is the job applicants name ?")
+degree = input("What did thay major in at college ?")
+job = input("What is their current occupation ?")
+experiance = input("How many years have they been woking in their field ?")
+
+print("applicant name is " + name + ", manored in " + degree + ", works as a " + job + ", years of experiance is " + experiance)
+# OutPut:- applicant name is Bhavin, manored in BVM, works as a IT, years of experiance is 4
+
+print("{} majored in {}, works as {}, and has {} years of experiance.".format(name, degree, job, experiance))
+# OutPut:- Bhavin majored in BVM, works as IT, and has 4 years of experiance.

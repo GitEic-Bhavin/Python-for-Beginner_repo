@@ -1,0 +1,28 @@
+What is an escape sequence ?
+Escape Sequences are special characters -- you can use in strings which enable you to do thihngs such as Insert Quotes " " ' ' within them.
+To Make Different parts of Strings appear on diff lines in the output.
+
+Escape Squences are like below:-
+
+1. \t -- Used to make a Horizontal Space or Indent when working with strings.
+
+Ex. print("This\tis\ta\tlot\tof\tspace")
+Output:- This	is	a	lot	of	space.
+
+
+2. \n -- New Line
+   It is used to put whatever is typed after it(\n) on a next or new line.
+
+Ex. print("Line one\nline two")
+Output:- Line one
+         line two.
+
+3. \'  \'  -- Put your output in single quotes or double quotes.
+   \"  \"
+
+Ex. print("\"Do or do not. There is no try.\"")
+Output:- "Do or do not. There is no try."
+
+4. \\  -- Used to put back slash \ after end of your sting.
+Ex. print("All escape sequence contain a \\.")
+Output:- "All escape sequence contain a \."

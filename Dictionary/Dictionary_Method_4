@@ -1,0 +1,32 @@
+# Dictionary Method 4: .setdefault()
+
+# Use to if key are not found in Dictionary then it create & assing in that Dictionary.
+
+# Lets do it by if statement
+
+# Id Key "Lenova" is not found in dictionary computers, then add it with value "ThinkPad" in dictionary computers.
+
+computers = {"Google": "ChromeBook", "Apple": "MacBook", "Microsoft": "Surface Pro"}
+print(computers)
+# OutPut:- {"Google": "ChromeBook", "Apple": "MacBook", "Microsoft": "Surface Pro"}
+
+if "Lenova" not in computers:
+    computers["Lenova"] = "ThinkPad"
+print(computers)
+
+# OutPut:- {"Google": "ChromeBook", "Apple": "MacBook", "Microsoft": "Surface Pro", "Lenova": "ThinkPad"}
+
+# Lets do it by using .setdefault()
+
+computers.setdefault("Lenovas", "ThinkpaD")
+print(computers)
+# OutPut:- {'Google': 'ChromeBook', 'Apple': 'MacBook', 'Microsoft': 'Surface Pro', 'Lenova': 'ThinkPad', 'Lenovas': 'ThinkpaD'}
+
+# If you defined a key-value pair using .setdefault() . Its set as default & will not be chaged its value 
+# Even if you reassign its key value.
+
+# Ex.
+computers.setdefault("Lenovas", "IdeaPad")
+print(computers)
+# OutPut:- {'Google': 'ChromeBook', 'Apple': 'MacBook', 'Microsoft': 'Surface Pro', 'Lenova': 'ThinkPad', 'Lenovas': 'ThinkpaD'}
+

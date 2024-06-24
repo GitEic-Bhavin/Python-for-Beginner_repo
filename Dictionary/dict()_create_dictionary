@@ -1,0 +1,15 @@
+dict() use to create a dictionary with your custome key & values.
+
+empty = dict() # it create an empty dictionary -- {}
+print(empty) # OutPut:- {}
+
+# Create a dictionary with key & value
+with_item = dict(a=1, b=2, c=3, d=4)
+print(with_item)  # OutPut:- {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+# NOTE:- You Can't use Numbers, int when use dict() -- functinos.
+# '1a': 1 -- is not valid , it will give error.
+
+# You can write numbers after a starting character.
+# 'a1':1, 'a_2': 2
+

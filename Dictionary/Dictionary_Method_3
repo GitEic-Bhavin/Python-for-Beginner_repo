@@ -1,0 +1,34 @@
+# Dictionary Methods 3: .clear(), .copy(), and .update()
+
+# 1. clear() -- Remove Everythings from a Dictionary. And resulting it as empty Dictionary.
+
+ex_1 = {1: "England", 2: "Scotland", 3: "Wales", 4: "Northern Ireland"}
+print(ex_1)
+# OutPut:- {1: "England", 2: "Scotland", 3: "Wales", 4: "Northern Ireland"}
+
+print(ex_1.clear())
+# OutPut:- ex_1 = {}
+
+# 2. .update() -- allows us to add key-value pairs from one Dictionary to another or overwrite
+# the value of existing keys in a Dictionary with value from another Dictionary
+
+
+# we have these 2 Dictionary
+city_info = {"country": "Canada", "province": "Ontario", "city": "Toronto"}
+population = {"population": 2930000}
+
+# To Update Dictionary city_info to add all key-value pair of population Dictionary.
+# Use .update() -- take 2 arguments, 1 is from which Dictionary you want to add/update, 2 is in whih directory you want to update.
+
+city_info.update(population)
+print(city_info)
+
+# OutPut:- {"country": "Canada", "province": "Ontario", "city": "Toronto", "population": 2930000}
+
+
+# To update a specific key-value pair
+city_info.update(population)
+city_info["population"] = 300000
+print(city_info)
+# OutPut:- {'country': 'Canada', 'province': 'Ontario', 'city': 'Toronto', 'population': 300000}
+

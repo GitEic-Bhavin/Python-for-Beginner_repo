@@ -1,0 +1,118 @@
+# del -- statement allow you to delete values from a list.
+
+planets = ["pluto", "mars", "earth", "venus"]
+
+# I want to remove/delete a string "pluto" from above string list.
+
+# del "var_name"["Index_No._of_want_to_remove_string"]
+
+del planets[0]
+print(planets)
+
+# OutPut:- ["mars", "earth", "venus"]
+
+
+# .remove() -- allows you to remove what you pass as arguments from a list.
+planet = ["pluto", "mars", "earth", "venus"]
+
+planet.remove("pluto")
+print(planet)
+# OutPut:- ["mars", "earth", "venus"]
+
+color = ["blue", "red", "white", "blue", "orange" ,"bule"]
+color.remove("blue")
+print(color)
+
+# OutPut:- ['red', 'white', 'blue', 'orange', 'bule']
+
+# Diff Between del & remove
+# del removes an item based on the index number of the item being removed.
+
+# remove method search a list for whatever item you passed as argumetns  & remove it from list when it finds that items.
+
+
+
+
+#   .append() -- Take an arguments  & adds that to the end of the list.
+# append allow to add extra string at end of line only.
+
+pets = ["cat", "dog", "parrot"]
+print(pets)
+# OutPut:- ['cat', 'dog', 'parrot']
+
+pets.append("fish")
+print(pets)
+# OutPut:- ['cat', 'dog', 'parrot', 'fish']
+
+
+
+#       insert()
+# Insert allows you to add an item  anywhere in the list while append allow only at end of line.
+
+# how to add a string in a list anywhere ?
+# 1. use index number in which you want to add in list.
+# 2. use new string to add in list.
+
+pet = ["cat", "dog", "parrot"]
+pet.insert(0, "nuts")
+print(pet)
+# OutPut- ['nuts', 'cat', 'dog', 'parrot']
+
+
+
+#   sort() -- sort /set lower to higher and viseversa 
+str_list = [19, 24, -100, 1000, 10]
+print(str_list)
+# OutPut:- [19, 24, -100, 1000, 10]
+
+str_list.sort()
+print(str_list)
+# OutPut:- [-100, 10, 19, 24, 1000]
+
+
+str_string = ["orange", "red", "yellow", "apple"]
+print(str_string)
+# OutPut:- ["orange", "red", "yellow", "apple"]
+
+str_string.sort()
+print(str_string)
+# OutPut:- ['apple', 'orange', 'red', 'yellow']
+
+
+
+# TO MAKE REVERSE IT
+# use reverse=True
+
+num_list = [2.78, 4, -19, 1000, 0]
+str_lists = ["Ringo", "John", "George", "Paul"]
+num_list.sort(reverse=True)
+print(num_list)
+# OutPut:- ['apple', 'orange', 'red', 'yellow']
+
+str_lists.sort(reverse=True)
+print(str_lists)
+# OutPut:- ['Ringo', 'Paul', 'John', 'George']
+
+
+
+#   pop()  -- use to get retrun value to use it in another vars.
+# last list/value will be removed from a list & assign to new variable named "end"
+
+bands = ["Queen", "Muse"]
+end = bands.pop()
+print(bands)
+# OutPut:- ['Queen']
+
+print(end)
+# OutPut:- Muse
+
+
+# If you want to remove a specific value from a list , use its index number using pop()
+
+band = ["Queen", "Muse"]
+ends = band.pop(0)
+print(band)
+# OutPut:-['Muse']
+
+print(ends)
+# OutPut:- Queen

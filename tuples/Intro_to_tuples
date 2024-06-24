@@ -1,0 +1,39 @@
+# Introduction to Tuples
+
+# Tuples is similar to list data type.
+# But, Tuples is diff in few way.
+
+# tuples defined in ()
+# list defined in []
+
+# tuples is immutable data type means, it can not be changed.
+# list is mutable data type means, it can be changed.
+
+# How To Create a Tuples ?
+# There are 2 ways
+# 1. is ex_1 = (1, 2, 3, 4)
+ex_1 = list("ab")
+print(ex_1)  # OutPut:- ['a', 'b']
+
+ex_2 = tuple("ab")
+print(ex_2)  # OutPut:- ('a', 'b')
+
+# Acces by index number using tuple .
+tuple_1 = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+print(tuple_1[2]) # OutPut:- 3
+print(tuple_1[:8]) # OutPut- (1, 2, 3, 4, 5, 6, 7, 8)
+print(tuple_1[2:7]) # OutPut:- (3, 4, 5, 6, 7)
+print(tuple_1[3:])  # OutPut:- (4, 5, 6, 7, 8, 9, 10)
+
+
+# tuples is a immutable data type. lets proove it.
+
+immutalbe = (0, 1, 2, 3, 4)
+print(immutalbe)  # OutPut:- (0, 1, 2, 3, 4)
+
+# Reassign a value of any index.
+# immutalbe[0] = "a"
+# print(immutalbe)  # OutPut:- Error: TypeError: 'tuple' object does not support item assignment.
+
+# Print How Much Bites of your list/tuple dictionary
+print(immutalbe.__sizeof__())  # OutPut:- 64

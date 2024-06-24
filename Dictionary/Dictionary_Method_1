@@ -1,0 +1,82 @@
+# To Access a only key of each values.
+
+birth = {1994: "bill", 1969: "emily", 1982: "elixabeth", 2000: "turner"}
+
+print(birth.keys())
+# OutPut:-dict_keys([1994, 1969, 1982, 2000])
+
+for key in birth.keys():
+    print(key)
+    
+    # OutPut:-
+# 1994
+# 1969
+# 1982
+# 2000 
+
+
+
+# .values()  -- allows you to get all of the values from a dictionary.
+birth = {1994: "bill", 1969: "emily", 1982: "elixabeth", 2000: "turner"}
+# print("name of dictionary".values())
+
+print(birth.values())
+# OutPut:- dict_values(['bill', 'emily', 'elixabeth', 'turner'])
+
+for values in birth.values():
+    print(values)
+    
+    # OutPut:-
+# bill
+# emily
+# elixabeth
+# turner
+
+# But, I want to get each items from the dictionary. like 1994: "bill" -- key & value both.
+
+# Use, .items()
+
+birth = {1994: "bill", 1969: "emily", 1982: "elixabeth", 2000: "turner"}
+print(birth.items())
+# OutPut:- dict_items([(1994, 'bill'), (1969, 'emily'), (1982, 'elixabeth'), (2000, 'turner')])
+
+for items in birth.items():
+    print(items)
+    
+    # OutPut:-
+# (1994, 'bill')
+# (1969, 'emily')
+# (1982, 'elixabeth')
+# (2000, 'turner')
+
+for key, value in birth.items():
+    print(key, value)
+    # OutPut:-
+# 1994 bill
+# 1969 emily
+# 1982 elixabeth
+# 2000 turner
+
+
+
+# Use in & not in operators.
+
+birth = {1994: "bill", 1969: "emily", 1982: "elizabeth", 2000: "turner"}
+print("elizabeth" in birth.values())
+# OutPut:- True
+
+# if statement
+birth = {1994: "bill", 1969: "emily", 1982: "elizabeth", 2000: "turner"}
+
+if 1975 in birth:
+    print(birth[1975])
+else:
+    print("1975 is not a key in birth")
+    
+# OutPut:- 1975 is not a key in birth
+    
+# Second Way for same above.
+# print(birth.get("arg 1. key you want to find", "arg 2. if not found then print somthing"))
+
+print(birth.get(1975, "1975 is not a key in birth"))
+# OutPut:- 1975 is not a key in birth

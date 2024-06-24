@@ -1,0 +1,29 @@
+﻿Introduction to Lists
+
+It contains multiple values in as ordered squence.
+Values within a list are alos known as items.
+
+List_1 =  [ 5, 4, 3, 2 ]  -- list can contains Int.
+list_2 = [ 2.3424, 3.1456 ] -- can contains float.
+list_3 = [ “blue”, “green”, “yellow”, “orange” ]  -- can contains “string”
+list_4 = [True, False, True, False ]  --  can contains “Boolean Value”
+list_5 = [ [1, 2, 3, 4],  [4, 5],  [6, 7, 8 ,9] ]  --  can contains No. of lists.
+List_6 = [10, 3, 3.14, “tree”, False, [ 1, 2, 3, 4] ] -- can contains all of above.
+
+
+
+
+List will conver your string into list by each character iteration.
+
+print(list(“blah”))
+[‘b’, ‘l’, ‘a’, ‘h’]
+
+
+
+
+ in and not in
+Used to check whether a value is avalibale by in or is not avalibale by not in Operators.
+
+
+
+

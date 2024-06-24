@@ -1,0 +1,31 @@
+If statment run for single time for sigle line,
+while statment run for continuously till condition meets.
+
+Ex.
+counter = 0
+
+while counter < 3:
+    print("something")
+    counter +=1
+
+OutPUT:-
+something
+something
+something
+
+counter vars is 0
+counter +=1 -- it add 1 in vars counter at each iteration/flow/loops.
+
+while counter < 3:
+if counter vars value 0 t0 2 not meets it runt iteration till meet to counter vars value is 2
+and print string "something" till meets this conditions.
+
+If we use if statment for this loops
+
+counter = 0
+
+if counter < 3:
+    print("something")
+
+This will print string "something" for sigle time.
+

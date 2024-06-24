@@ -1,0 +1,68 @@
+major_cities = ("Tokyo", "London", "New York", "Shanghai", "Sydney")
+
+# Lets print the tuple in vars major_cities using for loop
+
+for city in major_cities:
+    print(city)
+    
+# OutPut:-
+# Tokyo
+# London
+# New York
+# Shanghai
+# Sydney
+
+# Using while loop
+count = 0
+while count < len(major_cities):
+    print(major_cities[count])
+    count += 1
+# OutPut:-
+# Tokyo
+# London
+# New York
+# Shanghai
+# Sydney
+
+# Print major_cities at reverse.
+
+backwords = len(major_cities) -1
+print(backwords) # OutPut:- 4
+
+while backwords >= 0:
+    print(major_cities[backwords])
+    backwords -= 1
+    
+# OutPut:-
+# Sydney
+# Shanghai
+# New York
+# London
+# Tokyo
+
+
+#       tuples slicing with step
+
+# ints = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+# print(ints[::3])
+# Here, 1st : -- is a start point(index) of a tuple.
+#       2nd : -- is a end point(index) of a tuple.
+# 3 is a interval after each iterations.
+
+# start index number is defined by 1st :
+# How to define
+# write index number BEFORE 1st :
+
+# end index number is defined by 2nd :
+# How to define
+# write index number before 2nd :
+
+
+ints = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+print(ints[::3])  # OutPut:- (1, 4, 7, 10)
+print(ints[1::2])  # OutPut:- (2, 4, 6, 8, 10)
+print(ints[7::-1])  # OutPut:- (8, 7, 6, 5, 4, 3, 2, 1)
+print(ints[8::-2])  # OutPut:- (9, 7, 5, 3, 1)
+
+print(ints[1:4:1])  # OutPut:- (2, 3, 4)
+print(ints[-2:1:-2])  # OutPut:- 
